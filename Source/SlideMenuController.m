@@ -27,7 +27,7 @@ struct PanInfo {
     if (self) {
         _leftViewWidth = 270;
         _leftBezelWidth = 16.0;
-        _contentViewScale = 0.96;
+        _contentViewScale = 1.0;
         _contentViewOpacity = 0.5;
         _shadowOpacity = 0.0;
         _shadowRadius = 0.0;
