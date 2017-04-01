@@ -307,6 +307,7 @@ static UIGestureRecognizerState RPSLastState = UIGestureRecognizerStateEnded;
         if (self.leftPanGesture == nil) {
             self.leftPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleLeftPanGesture:)];
             self.leftPanGesture.delegate = self;
+            self.leftPanGesture.enabled = options.leftPanEnable;
             [self.view addGestureRecognizer:self.leftPanGesture];
         }
         

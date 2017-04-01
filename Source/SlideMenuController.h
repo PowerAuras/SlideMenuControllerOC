@@ -51,7 +51,7 @@ typedef enum {
 @property (assign, nonatomic) CGFloat pointOfNoReturnWidth;
 @property (assign, nonatomic) BOOL simultaneousGestureRecognizers;
 @property (retain, nonatomic) UIColor *opacityViewBackgroundColor;
-
+@property (assign, nonatomic) BOOL leftPanEnable;
 @end
 
 @interface SlideMenuController : UIViewController<UIGestureRecognizerDelegate>

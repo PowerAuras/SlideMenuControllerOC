@@ -31,6 +31,8 @@
     ExSlideMenuController *slideMenuController = [[ExSlideMenuController alloc] initWithMainViewController:nvc leftMenuViewController:leftViewController rightMenuViewController:rightViewController];
     slideMenuController.automaticallyAdjustsScrollViewInsets = YES;
     slideMenuController.delegate = mainViewController;
+    slideMenuController.option.leftPanEnable = NO;
+    slideMenuController.leftPanGesture.enabled = NO;
     self.window.backgroundColor = [UIColor colorWithRed:236.0 green:238.0 blue:241.0 alpha:1.0];
     self.window.rootViewController = slideMenuController;
     [self.window makeKeyWindow];
